@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' // Shadowプラグイン
+}
+
+
+group 'jp.annko.maimai'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.11.0'
+}
+
+sourceCompatibility = '21'
+targetCompatibility = '21'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    // Jakarta Servlet API
+    compileOnly 'jakarta.servlet:jakarta.servlet-api:6.1.0'
+
+    implementation 'org.slf4j:slf4j-simple:2.0.9' // シンプルなSLF4J実装
+
+    // Jetty Server
+    implementation 'org.eclipse.jetty:jetty-server:11.0.15'
+    implementation 'org.eclipse.jetty:jetty-servlet:11.0.15'
+
+    // JUnit for testing
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+shadowJar {
+    archiveClassifier.set("") // Fat JARのファイル名をデフォルトにする
+    manifest {
+        attributes(
+                'Main-Class': 'jp.annko.maimai.Main' // メインクラスを指定
+        )
+    }
+}
