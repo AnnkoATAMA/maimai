@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="607a506c-bf04-4e52-b09a-f9b4bdcab1ba" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/config/dev_default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/java/jp/annko/servlet/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/java/jp/annko/servlet/controllers/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/config/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sql/config/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/insert_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/insert_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/migrations/create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/migrations/create_users_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/schema.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2qVGGnhXNSEsotOoRyQRMwfmp2Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.docker-compose.yml.mysql: Compose デプロイ.executor": "Run",
+    "Docker.docker-compose.yml.nginx: Compose デプロイ.executor": "Run",
+    "Docker.docker-compose.yml.tunnel: Compose デプロイ.executor": "Run",
+    "Docker.docker-compose.yml: Compose デプロイ.executor": "Run",
+    "JAR アプリケーション.maimai-1.0-SNAPSHOT.jar.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Tomcat サーバー.Tomcat 11.0.1.executor": "Run",
+    "git-widget-placeholder": "feature/login",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/takumi/dev/maimai",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "プロジェクト",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true",
+    "アプリケーション.名前未設定.executor": "Run"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/nginx.conf" />
+      <recent name="$PROJECT_DIR$/docker" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/servlet/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/servlet/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/servlet/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/servlet/src/main/java/jp/annko/maimai/controllers" />
+      <recent name="$PROJECT_DIR$/servlet/src/main/webapp/static/css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose デプロイ">
+    <configuration name="名前未設定" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="jdk.javadoc.internal.tool.Main" />
+      <module name="javajava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose デプロイ" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mysql: Compose デプロイ" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.nginx: Compose デプロイ" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="nginx" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.tunnel: Compose デプロイ" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="tunnel" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml.mysql: Compose デプロイ" />
+      <item itemvalue="Docker.docker-compose.yml.nginx: Compose デプロイ" />
+      <item itemvalue="Docker.docker-compose.yml.tunnel: Compose デプロイ" />
+      <item itemvalue="Docker.docker-compose.yml: Compose デプロイ" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose デプロイ" />
+        <item itemvalue="Docker.docker-compose.yml.mysql: Compose デプロイ" />
+        <item itemvalue="Docker.docker-compose.yml.nginx: Compose デプロイ" />
+        <item itemvalue="Docker.docker-compose.yml.tunnel: Compose デプロイ" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="607a506c-bf04-4e52-b09a-f9b4bdcab1ba" name="Changes" comment="" />
+      <created>1734740235637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734740235637</updated>
+      <workItem from="1734740236646" duration="999000" />
+      <workItem from="1734741795679" duration="13000" />
+      <workItem from="1734741812266" duration="18647000" />
+      <workItem from="1734790730385" duration="11484000" />
+      <workItem from="1734866195903" duration="479000" />
+      <workItem from="1734866683482" duration="790000" />
+      <workItem from="1734867885446" duration="64000" />
+      <workItem from="1734868066059" duration="2306000" />
+      <workItem from="1734928726281" duration="613000" />
+      <workItem from="1734929427176" duration="440000" />
+      <workItem from="1734929880649" duration="1128000" />
+      <workItem from="1734931011946" duration="552000" />
+      <workItem from="1735206942540" duration="13273000" />
+      <workItem from="1736570232552" duration="449000" />
+      <workItem from="1736571342353" duration="5131000" />
+      <workItem from="1736914897416" duration="25000" />
+      <workItem from="1736914930959" duration="5686000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

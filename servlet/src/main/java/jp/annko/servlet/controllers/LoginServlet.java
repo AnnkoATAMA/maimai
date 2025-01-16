@@ -7,14 +7,25 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.RequestDispatcher;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.*;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/maimai_db";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "password";
+    private DataSource dataSource;
+
+    @Override
+    public void init() throws ServletException {
+        try {
+            InitialContext ctx = new InitialContext();
+            dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/maimaiDB");
+        } catch (NamingException e) {
+            throw new ServletException("Cannot find JNDI resource", e);
+        }
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,7 +47,7 @@ public class LoginServlet extends HttpServlet {
 
         String hashedPassword = hashPassword(password);
 
-        try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+        try (Connection conn = dataSource.getConnection();
              PreparedStatement stmt = conn.prepareStatement(
                      "SELECT * FROM users WHERE username = ? AND password = ?")) {
             stmt.setString(1, username);
@@ -57,7 +68,6 @@ public class LoginServlet extends HttpServlet {
     }
 
     private String hashPassword(String password) {
-        // ハッシュ化ロジックを実装（例: JavaのMessageDigestを使用）
         try {
             java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA-256");
             byte[] hash = md.digest(password.getBytes(java.nio.charset.StandardCharsets.UTF_8));
