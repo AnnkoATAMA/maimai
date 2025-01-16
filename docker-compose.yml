@@ -1,0 +1,77 @@
+version: "3.9"
+services:
+  servlet:
+    build:
+      context: ./servlet
+      dockerfile: Dockerfile
+    networks:
+      - maimai_network
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./servlet/src:/app/src
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/maimai_db
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=password
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost:8080/healthcheck"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 3s
+
+  nginx:
+    image: nginx:1.27.1
+    networks:
+      - maimai_network
+    ports:
+      - "80:80"
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - ./docker/nginx/config/dev_default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - servlet
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: maimaidb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-prootpassword" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+
+  tunnel:
+    restart: always
+    image: cloudflare/cloudflared
+    command: tunnel run
+    env_file:
+      - maimai-env/.env
+    depends_on:
+      nginx:
+        condition: service_healthy
+
+networks:
+  maimai_network:
+volumes:
+  db_data:

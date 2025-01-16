@@ -1,0 +1,5 @@
+<Resource name="jdbc/maimaiDB" auth="Container"
+          type="javax.sql.DataSource"
+          username="root" password="password"
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          url="jdbc:mysql://localhost:3306/maimai_db"/>

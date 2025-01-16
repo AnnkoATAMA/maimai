@@ -1,0 +1,3 @@
+[submodule "maimai-env"]
+	path = maimai-env
+	url = https://github.com/AnnkoATAMA/maimai-env.git
