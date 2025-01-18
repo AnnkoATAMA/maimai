@@ -64,6 +64,8 @@ services:
   tunnel:
     restart: always
     image: cloudflare/cloudflared
+    networks:
+      - maimai_network
     command: tunnel run
     env_file:
       - maimai-env/.env
