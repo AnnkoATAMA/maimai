@@ -12,10 +12,10 @@
     <div>
         <form action="login" method="post" class="login_form card">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" autocomplete="username" name="username" required>
             <br>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" autocomplete="current-password" name="password" required>
             <br>
             <button type="submit">Login</button>
         </form>
