@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="607a506c-bf04-4e52-b09a-f9b4bdcab1ba" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/config/dev_default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/src/main/java/jp/annko/servlet/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/java/jp/annko/servlet/controllers/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/config/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sql/config/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/insert_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/insert_data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/migrations/create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/migrations/create_users_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Tomcat サーバー.Tomcat 11.0.1.executor": "Run",
-    "git-widget-placeholder": "feature/login",
+    "git-widget-placeholder": "feature/keiba",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/takumi/dev/maimai",
     "list.type.of.created.stylesheet": "CSS",
@@ -203,6 +191,8 @@
       <workItem from="1736571342353" duration="5131000" />
       <workItem from="1736914897416" duration="25000" />
       <workItem from="1736914930959" duration="5686000" />
+      <workItem from="1737080431906" duration="12674000" />
+      <workItem from="1737159157466" duration="7296000" />
     </task>
     <servers />
   </component>
