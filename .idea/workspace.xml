@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="607a506c-bf04-4e52-b09a-f9b4bdcab1ba" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/insert_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/insert_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/migrations/create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/migrations/create_users_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/config/dev_default.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/java/jp/annko/servlet/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/java/jp/annko/servlet/controllers/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/keiba.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/keiba.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/keiba_welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/keiba_welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/keiba_welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/keiba_welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/src/main/webapp/welcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,34 +47,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Docker.docker-compose.yml.mysql: Compose デプロイ.executor": "Run",
-    "Docker.docker-compose.yml.nginx: Compose デプロイ.executor": "Run",
-    "Docker.docker-compose.yml.tunnel: Compose デプロイ.executor": "Run",
-    "Docker.docker-compose.yml: Compose デプロイ.executor": "Run",
-    "JAR アプリケーション.maimai-1.0-SNAPSHOT.jar.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Tomcat サーバー.Tomcat 11.0.1.executor": "Run",
-    "git-widget-placeholder": "feature/keiba",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/takumi/dev/maimai",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "プロジェクト",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true",
-    "アプリケーション.名前未設定.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Docker.docker-compose.yml.mysql: Compose デプロイ.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.nginx: Compose デプロイ.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.tunnel: Compose デプロイ.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose デプロイ.executor&quot;: &quot;Run&quot;,
+    &quot;JAR アプリケーション.maimai-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Tomcat サーバー.Tomcat 11.0.1.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/takumi/dev/maimai&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;プロジェクト&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;アプリケーション.名前未設定.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -193,6 +201,7 @@
       <workItem from="1736914930959" duration="5686000" />
       <workItem from="1737080431906" duration="12674000" />
       <workItem from="1737159157466" duration="7296000" />
+      <workItem from="1737323980122" duration="20260000" />
     </task>
     <servers />
   </component>

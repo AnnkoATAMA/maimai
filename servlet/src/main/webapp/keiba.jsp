@@ -16,6 +16,7 @@
 <html>
 <head>
   <title>馬券ジェネレーター</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
   <link rel="stylesheet" type="text/css" href="./static/css/keiba.css">
 </head>
 <body>

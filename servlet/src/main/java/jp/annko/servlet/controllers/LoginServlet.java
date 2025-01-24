@@ -16,9 +16,8 @@ import java.sql.SQLException;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-    // JDBC接続情報（MySQL用に修正）
-    private static final String MYSQL_DRIVER = "com.mysql.cj.jdbc.Driver"; // MySQLのドライバ
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/maimaidb?useSSL=false&serverTimezone=UTC"; // MySQLのURL
+    private static final String MYSQL_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/maimaidb?useSSL=false&serverTimezone=UTC";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "password";
 
@@ -34,18 +33,14 @@ public class LoginServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        // ユーザー名とパスワードが空でないかを確認
         if (username == null || password == null || username.isEmpty() || password.isEmpty()) {
             req.setAttribute("error", "Username and password are required.");
             req.getRequestDispatcher("/login.jsp").forward(req, resp);
             return;
         }
 
-        // データベース接続と認証処理
         try {
-            // JDBCドライバをロード
             Class.forName(MYSQL_DRIVER);
-
             try (Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
                  PreparedStatement stmt = conn.prepareStatement(
                          "SELECT * FROM users WHERE username = ? AND password = ?")) {
@@ -56,11 +51,9 @@ public class LoginServlet extends HttpServlet {
                 ResultSet rs = stmt.executeQuery();
 
                 if (rs.next()) {
-                    // ログイン成功
                     req.getSession().setAttribute("username", username);
                     resp.sendRedirect("welcome.jsp");
                 } else {
-                    // ログイン失敗
                     req.setAttribute("error", "Invalid username or password.");
                     System.out.println("Invalid username or password.");
                     System.out.println("username: " + username);
