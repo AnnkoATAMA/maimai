@@ -20,6 +20,9 @@
         <ul>
             <li><a href="hello-servlet">Hello Servlet</a></li>
             <li><a href="keiba_welcome.jsp">馬券ジェネレーター</a></li>
+            <li><a href="syogi.jsp">将棋</a></li>
+            <li><a href="playlist.jsp">プレイリスト</a></li>
+            <li><a href="logout.jsp">Logout</a></li>
         </ul>
     </nav>
 </div>
