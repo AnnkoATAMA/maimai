@@ -1,0 +1,66 @@
+.obi{
+	background-color: rgb(168, 83, 149);
+	height: 10px;
+	width:100%;
+}
+.back-obi{
+	background-color: rgb(111, 55, 98);
+	height: 50px;
+	width:100%;
+	top:-10px;
+}
+
+.menu{
+	background-color: yellow;
+	right: 50px;
+	top: 40px;
+	justify-content: flex-end;
+	position: fixed;
+	gap: 20px;
+}
+
+.bord{
+	background-color:#deb887;
+	width: 540px;
+	height: 540px;
+	position:relative;
+	top:5px;
+	left:70px
+}
+
+.piece{
+	position: absolute;
+    width: 60px; 
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: rgb(230, 201, 162);
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+	display: inline-block; 
+}
+
+.place{
+	position: absolute;
+    width: 60px; 
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: rgb(163, 112, 44);
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+	display: inline-block; 
+}
+
+.piece:hover {
+    background-color: #4caf50;
+    color: black;
+}

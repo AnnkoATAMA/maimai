@@ -22,3 +22,34 @@ body {
     margin: 20px 0;
     padding: 20px;
 }
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.menu {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #52e344;
+}
+
+.menu a:hover {
+    color: #1cec83;
+}

@@ -3,11 +3,22 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<div class="container">
+    <h1><%= "Hello World!" %>
+    </h1>
+    <br/>
+    <div class="card">
+        <nav class="menu">
+            <ul>
+                <li><a href="login.jsp">login</a></li>
+                <li><a href="hello-servlet">Hello Servlet</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
 </body>
 </html>
