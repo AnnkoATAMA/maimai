@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-  String username = (String) session.getAttribute("username");
-  if (username == null) {
+  String email = (String) session.getAttribute("email");
+  if (email == null) {
     response.sendRedirect("login.jsp");
     return;
   }

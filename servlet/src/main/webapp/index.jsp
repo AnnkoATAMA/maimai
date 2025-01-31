@@ -15,6 +15,7 @@
             <ul>
                 <li><a href="login.jsp">login</a></li>
                 <li><a href="hello-servlet">Hello Servlet</a></li>
+                <li><a href="register.jsp">新規登録</a></li>
             </ul>
         </nav>
     </div>
