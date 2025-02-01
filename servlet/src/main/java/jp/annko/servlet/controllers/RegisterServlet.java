@@ -10,11 +10,10 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/register")
+public class RegisterServlet extends HttpServlet {
     private static final String MYSQL_DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/maimaidb?useSSL=false&serverTimezone=UTC";
     private static final String JDBC_USER = "root";
@@ -27,7 +26,7 @@ public class LoginServlet extends HttpServlet {
 
         if (email == null || password == null || email.isEmpty() || password.isEmpty()) {
             req.setAttribute("error", "Email and password are required.");
-            req.getRequestDispatcher("/login.jsp").forward(req, resp);
+            req.getRequestDispatcher("/register.jsp").forward(req, resp);
             return;
         }
 
@@ -35,22 +34,13 @@ public class LoginServlet extends HttpServlet {
             Class.forName(MYSQL_DRIVER);
             try (Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
                  PreparedStatement stmt = conn.prepareStatement(
-                         "SELECT * FROM users WHERE email = ? AND password = ?")) {
+                         "INSERT INTO users (email, password, role) VALUES (?, ?, 'USER')")) {
 
                 stmt.setString(1, email);
                 stmt.setString(2, password);
+                stmt.executeUpdate();
 
-                ResultSet rs = stmt.executeQuery();
-
-                if (rs.next()) {
-                    String role = rs.getString("role");
-                    req.getSession().setAttribute("email", email);
-                    req.getSession().setAttribute("role", role);
-                    resp.sendRedirect("welcome.jsp");
-                } else {
-                    req.setAttribute("error", "Invalid email or password.");
-                    req.getRequestDispatcher("/login.jsp").forward(req, resp);
-                }
+                resp.sendRedirect("login.jsp");
             } catch (SQLException e) {
                 throw new ServletException("Database error occurred.", e);
             }
@@ -59,3 +49,4 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
+

@@ -9,16 +9,17 @@
 <body>
 <div class="container">
     <h1>Login</h1>
-    <div>
+    <div>　
         <form action="login" method="post" class="login_form card">
-            <label for="username">Username:</label>
-            <input type="text" id="username" autocomplete="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" autocomplete="username" name="email" required>
             <br>
             <label for="password">Password:</label>
             <input type="password" id="password" autocomplete="current-password" name="password" required>
             <br>
             <button type="submit">Login</button>
         </form>
+
     </div>
 
     <p style="color:red;">

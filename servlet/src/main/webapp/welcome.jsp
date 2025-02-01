@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page session="true" %>
 <%
-    String username = (String) session.getAttribute("username");
-    if (username == null) {
+    String email = (String) session.getAttribute("email");
+    String role = (String) session.getAttribute("role");
+
+    if (email == null) {
         response.sendRedirect("login.jsp");
         return;
     }
@@ -15,7 +17,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Welcome, <%= username %>!</h1>
+    <h1>Welcome, <%= email %>!</h1>
     <nav class="menu">
         <ul>
             <li><a href="hello-servlet">Hello Servlet</a></li>
@@ -23,9 +25,11 @@
             <li><a href="syogi.jsp">将棋</a></li>
             <li><a href="playlist.jsp">プレイリスト</a></li>
             <li><a href="logout.jsp">Logout</a></li>
+            <% if ("ADMIN".equals(role)) { %>
+            <li><a href="admin/users">User List</a></li>
+            <% } %>
         </ul>
     </nav>
 </div>
-
 </body>
 </html>
